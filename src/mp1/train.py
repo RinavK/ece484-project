@@ -11,9 +11,9 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 
-LR = 
-EPOCHS = 
+BATCH_SIZE = 16
+LR = 0.001
+EPOCHS = 3
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DATASET_PATH =  "/opt/data/TUSimple"
 CHECKPOINT_DIR = "checkpoints"
@@ -75,9 +75,13 @@ def train():
     ################################################################################
     # train_dataset = ...
     # train_loader = DataLoader(...)
+    train_dataset = LaneDataset(DATASET_PATH)
+    train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True);
 
     # val_dataset = ...
     # val_loader = DataLoader(...)
+    val_dataset = LaneDataset(DATASET_PATH, "val")
+    val_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True);
     ################################################################################
 
     # Model and optimizer initialization
@@ -87,7 +91,7 @@ def train():
     # TODO: Initialize the Adam optimizer with appropriate learning rate and weight decay.
     ################################################################################
     # optimizer = ...
-    
+    optimizer = Adam(enet_model.parameters(), weight_decay=0.001, lr=LR)
     ################################################################################
 
 
@@ -121,8 +125,24 @@ def train():
             # 3. Compute the binary and instance losses using `compute_loss`.
             # 4. Sum the losses (`loss = binary_loss + instance_loss`) for backpropagation.
             # 5. Zero out the optimizer gradients, backpropagate the loss, and take an optimizer step.
+            
+            images = images.to(DEVICE)
+            binary_labels = binary_labels.to(DEVICE)
+            instance_labels = instance_labels.to(DEVICE)
 
+            binary_logits, instance_embeddings = enet_model(images)
 
+            binary_loss, instance_loss = compute_loss(
+                binary_output=binary_logits,
+                instance_output=instance_embeddings,
+                binary_label=binary_labels,
+                instance_label=instance_labels,
+            )
+            loss = binary_loss + instance_loss
+            
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
 
 
@@ -163,6 +183,7 @@ def train():
         # Call the `validate` function, passing the model and validation data loader.
         ################################################################################
         # val_binary_loss, val_instance_loss, val_total_loss = ...
+        val_binary_loss, val_instance_loss, val_total_loss = validate(enet_model, val_loader)
         ################################################################################
         print(f"Validation Results - Epoch {epoch}: "
               f"Binary Loss = {val_binary_loss:.4f}, "

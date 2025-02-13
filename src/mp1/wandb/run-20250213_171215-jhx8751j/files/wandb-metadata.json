@@ -1,0 +1,42 @@
+{
+  "os":  "Linux-5.15.0-131-generic-x86_64-with-glibc2.17",
+  "python":  "CPython 3.8.20",
+  "startedAt":  "2025-02-13T23:12:15.725737Z",
+  "program":  "train.py",
+  "codePath":  "src/mp1/train.py",
+  "git":  {
+    "remote":  "https://gitlab.engr.illinois.edu/GolfCar/mp-release-sp25.git",
+    "commit":  "c770bb46f9e5c1b074d61271b81cabdbda9b357f"
+  },
+  "email":  "rishi.kodavati@gmail.com",
+  "root":  "/home/rk33/mp-release-sp25/src/mp1",
+  "host":  "eceb-5072-22.ews.illinois.edu",
+  "executable":  "/home/rk33/.conda/envs/tusimple/bin/python3",
+  "codePathLocal":  "train.py",
+  "cpu_count":  20,
+  "cpu_count_logical":  28,
+  "gpu":  "NVIDIA RTX 2000 Ada Generation",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1006450962432",
+      "used":  "82062401536"
+    }
+  },
+  "memory":  {
+    "total":  "67092353024"
+  },
+  "cpu":  {
+    "count":  20,
+    "countLogical":  28
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA RTX 2000 Ada Generation",
+      "memoryTotal":  "17175674880",
+      "cudaCores":  2816,
+      "architecture":  "Ada"
+    }
+  ],
+  "cudaVersion":  "12.8"
+}

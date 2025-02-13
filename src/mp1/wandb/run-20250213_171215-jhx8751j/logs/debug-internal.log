@@ -1,0 +1,15 @@
+{"time":"2025-02-13T17:12:15.726761855-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/rk33/mp-release-sp25/src/mp1/wandb/run-20250213_171215-jhx8751j/logs/debug-core.log"}
+{"time":"2025-02-13T17:12:15.828480658-06:00","level":"INFO","msg":"created new stream","id":"jhx8751j"}
+{"time":"2025-02-13T17:12:15.828503136-06:00","level":"INFO","msg":"stream: started","id":"jhx8751j"}
+{"time":"2025-02-13T17:12:15.828544698-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:15.828550095-06:00","level":"INFO","msg":"handler: started","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:15.828562085-06:00","level":"INFO","msg":"sender: started","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:15.951947415-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-13T17:12:16.016132197-06:00","level":"INFO","msg":"stream: closing","id":"jhx8751j"}
+{"time":"2025-02-13T17:12:16.016168903-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-13T17:12:16.0170389-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-13T17:12:16.445264353-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-13T17:12:16.52091278-06:00","level":"INFO","msg":"handler: closed","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:16.520942212-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:16.521001355-06:00","level":"INFO","msg":"sender: closed","stream_id":"jhx8751j"}
+{"time":"2025-02-13T17:12:16.521069311-06:00","level":"INFO","msg":"stream: closed","id":"jhx8751j"}

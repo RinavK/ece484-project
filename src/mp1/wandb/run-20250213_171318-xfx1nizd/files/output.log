@@ -1,0 +1,7 @@
+Epoch 1/3:   0%|                                        | 0/201 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 204, in <module>
+    train()
+  File "train.py", line 133, in train
+    binary_logits, instance_embeddings = model(images)
+NameError: name 'model' is not defined

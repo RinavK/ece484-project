@@ -1,0 +1,19 @@
+Epoch 1/3: 100%|██████████████████████████████| 201/201 [00:58<00:00,  3.44it/s]
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Epoch 1/3: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|█████████████████████████████| 201/201 [00:28<00:00,  6.99it/s]
+Validation Results - Epoch 1: Binary Loss = 0.0731, Instance Loss = 0.1893, Total Loss = 0.2624
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_1.pth
+Epoch 2/3: 100%|██████████████████████████████| 201/201 [00:58<00:00,  3.45it/s]
+Epoch 2/3: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|█████████████████████████████| 201/201 [00:28<00:00,  6.97it/s]
+Validation Results - Epoch 2: Binary Loss = 0.0557, Instance Loss = 0.1168, Total Loss = 0.1725
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_2.pth
+Epoch 3/3: 100%|██████████████████████████████| 201/201 [00:58<00:00,  3.42it/s]
+Epoch 3/3: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|█████████████████████████████| 201/201 [00:28<00:00,  6.95it/s]
+Validation Results - Epoch 3: Binary Loss = 0.0504, Instance Loss = 0.0694, Total Loss = 0.1198
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_3.pth
