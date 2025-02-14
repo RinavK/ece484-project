@@ -1,0 +1,16 @@
+{"time":"2025-02-14T13:01:01.592557378-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/rk33/mp-release-sp25/src/mp1/wandb/run-20250214_130101-fnvz2bea/logs/debug-core.log"}
+{"time":"2025-02-14T13:01:01.694823289-06:00","level":"INFO","msg":"created new stream","id":"fnvz2bea"}
+{"time":"2025-02-14T13:01:01.694863314-06:00","level":"INFO","msg":"stream: started","id":"fnvz2bea"}
+{"time":"2025-02-14T13:01:01.694966647-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:01:01.694996922-06:00","level":"INFO","msg":"sender: started","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:01:01.695102719-06:00","level":"INFO","msg":"handler: started","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:01:01.851825236-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T13:11:30.505582334-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T13:11:30.505906537-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T13:11:31.506127343-06:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading checkpoints/enet_checkpoint_epoch_5.pth","runtime_seconds":0.603843041,"progress":"6.2MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_6.pth","runtime_seconds":0.603833903,"progress":"6.0MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_1.pth","runtime_seconds":0.603830077,"progress":"5.9MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_2.pth","runtime_seconds":0.603825722,"progress":"6.8MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_3.pth","runtime_seconds":0.603821363,"progress":"6.3MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_4.pth","runtime_seconds":0.60381679,"progress":"5.5MB/6.8MB"},{"desc":"uploading checkpoints/enet_checkpoint_epoch_7.pth","runtime_seconds":0.53717131,"progress":"6.8MB/6.8MB"}],"total_operations":7}}
+{"time":"2025-02-14T13:11:31.841338594-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T13:11:32.939313113-06:00","level":"INFO","msg":"stream: closing","id":"fnvz2bea"}
+{"time":"2025-02-14T13:11:32.939342365-06:00","level":"INFO","msg":"handler: closed","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:11:32.939358149-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:11:32.939375089-06:00","level":"INFO","msg":"sender: closed","stream_id":"fnvz2bea"}
+{"time":"2025-02-14T13:11:32.939515626-06:00","level":"INFO","msg":"stream: closed","id":"fnvz2bea"}

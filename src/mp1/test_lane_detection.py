@@ -8,7 +8,7 @@ import os
 
 # Define dataset and checkpoint paths
 DATASET_PATH = "/opt/data/TUSimple/test_set"
-CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_5.pth"  # Path to the trained model checkpoint
+CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_4.pth"  # Path to the trained model checkpoint
 
 # Function to load the ENet model
 def load_enet_model(checkpoint_path, device="cuda"):
@@ -32,13 +32,13 @@ def perspective_transform(image):
     height = image.shape[0]
     width = image.shape[1]
     
-    source_points = np.array([[0, 720],[1280, 720],[100,250],[1180,250]])
+    source_points = np.array([[0, height],[width, height],[0.1*width,0.4*height],[0.9*width,0.4*height]])
     
-    dest_points = np.array([[0,720],[1280,720], [0,0],[1280,0]])
+    dest_points = np.array([[0,height],[width,height], [0,0],[width,0]])
     
     warp_factor = cv2.getPerspectiveTransform(source_points.astype(np.float32), dest_points.astype(np.float32))
     
-    transformed_image = cv2.warpPerspective(image, warp_factor, (1280, 720))
+    transformed_image = cv2.warpPerspective(image, warp_factor, (width, height))
     
 
     ####################### TODO: Your code ends Here #######################
@@ -64,15 +64,15 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     for i in range(num_images):
 
     	img = perspective_transform(images[i])
+    	birds_eye = cv2.resize(img, (512, 256))
     	
-    	birds_eye = cv2.resize(img, (256, 512))
-    	#birds_eye_instance = perspective_transform(instances_maps[i])
+    	instance = perspective_transform(instances_maps[i])
     	
-    	instance = cv2.resize(instances_maps[i], (256, 512))
+    	#instance = cv2.resize(instances_maps[i], (256, 512))
 
     	#overlaid = cv2.addWeighted(birds_eye.astype(np.float32), alpha, instance.astype(np.float32), 1-alpha, 0)
-    	axes[i].imshow(instance.astype(np.int32), alpha=(1-alpha))
-    	axes[i].imshow(birds_eye.astype(np.int32), alpha=alpha)
+    	axes[i].imshow(instance.astype(np.int32), alpha=0.8)
+    	axes[i].imshow(birds_eye.astype(np.int32), alpha=0.2)
     
     ####################### TODO: Your code ends Here #######################
 
