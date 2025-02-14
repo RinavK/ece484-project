@@ -1,0 +1,25 @@
+Epoch 1/5:   0%|                                         | 0/51 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train.py", line 204, in <module>
+    train()
+  File "train.py", line 133, in train
+    binary_logits, instance_embeddings = enet_model(images)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rk33/mp-release-sp25/src/mp1/models/enet.py", line 450, in forward
+    x_binary = self.upsample_binary_5_0(x_binary, max_indices1_0, output_size=stage1_input_size)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rk33/mp-release-sp25/src/mp1/models/enet.py", line 332, in forward
+    ext = self.ext_conv2(ext)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 171, in forward
+    return F.batch_norm(
+  File "/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/torch/nn/functional.py", line 2450, in batch_norm
+    return torch.batch_norm(
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB (GPU 0; 15.58 GiB total capacity; 14.89 GiB already allocated; 117.81 MiB free; 15.09 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,15 @@
+{"time":"2025-02-14T12:06:49.745324868-06:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/home/rk33/mp-release-sp25/src/mp1/wandb/run-20250214_120649-hbhpxvt1/logs/debug-core.log"}
+{"time":"2025-02-14T12:06:49.848065727-06:00","level":"INFO","msg":"created new stream","id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:49.848102827-06:00","level":"INFO","msg":"stream: started","id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:49.848190004-06:00","level":"INFO","msg":"writer: Do: started","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:49.848230756-06:00","level":"INFO","msg":"handler: started","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:49.848358373-06:00","level":"INFO","msg":"sender: started","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:50.023046843-06:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T12:06:50.904202164-06:00","level":"INFO","msg":"stream: closing","id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:50.90421449-06:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T12:06:50.904551242-06:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T12:06:51.242094494-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T12:06:51.325173365-06:00","level":"INFO","msg":"handler: closed","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:51.325222708-06:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:51.325262019-06:00","level":"INFO","msg":"sender: closed","stream_id":"hbhpxvt1"}
+{"time":"2025-02-14T12:06:51.325319288-06:00","level":"INFO","msg":"stream: closed","id":"hbhpxvt1"}

@@ -8,7 +8,7 @@ import os
 
 # Define dataset and checkpoint paths
 DATASET_PATH = "/opt/data/TUSimple/test_set"
-CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_3.pth"  # Path to the trained model checkpoint
+CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_5.pth"  # Path to the trained model checkpoint
 
 # Function to load the ENet model
 def load_enet_model(checkpoint_path, device="cuda"):
@@ -32,7 +32,7 @@ def perspective_transform(image):
     height = image.shape[0]
     width = image.shape[1]
     
-    source_points = np.array([[0, 720],[1280, 700],[100,250],[1180,250]])
+    source_points = np.array([[0, 720],[1280, 720],[100,250],[1180,250]])
     
     dest_points = np.array([[0,720],[1280,720], [0,0],[1280,0]])
     
@@ -62,20 +62,23 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     ####################### TODO: Your code starts Here #######################
     
     for i in range(num_images):
-    	#print(type(images[i]), images[i].shape, type(instances_maps[i]), instances_maps[i].shape)
+
     	img = perspective_transform(images[i])
+    	
     	birds_eye = cv2.resize(img, (256, 512))
-    	birds_eye_instance = perspective_transform(instances_maps[i])
-    	instance = np.stack([birds_eye_instance]*3, axis=-1)
-    	instance = cv2.resize(instance, (256, 512))
-    	print(birds_eye.shape, instance.shape)
-    	overlaid = cv2.addWeighted(birds_eye.astype(np.float32), alpha, instance.astype(np.float32), 1-alpha, 0)
-    	axes[i].imshow(overlaid.astype(np.int32))
+    	#birds_eye_instance = perspective_transform(instances_maps[i])
+    	
+    	instance = cv2.resize(instances_maps[i], (256, 512))
+
+    	#overlaid = cv2.addWeighted(birds_eye.astype(np.float32), alpha, instance.astype(np.float32), 1-alpha, 0)
+    	axes[i].imshow(instance.astype(np.int32), alpha=(1-alpha))
+    	axes[i].imshow(birds_eye.astype(np.int32), alpha=alpha)
     
     ####################### TODO: Your code ends Here #######################
 
     plt.tight_layout()
     plt.show()
+    plt.savefig("output_images.png")
 
 def main():
     # Initialize device and model

@@ -11,9 +11,9 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 16
+BATCH_SIZE = 32
 LR = 0.001
-EPOCHS = 3
+EPOCHS = 5
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DATASET_PATH =  "/opt/data/TUSimple"
 CHECKPOINT_DIR = "checkpoints"
