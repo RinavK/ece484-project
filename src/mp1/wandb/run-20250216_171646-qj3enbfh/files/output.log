@@ -1,0 +1,54 @@
+Epoch 1/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Epoch 1/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.74it/s]
+Validation Results - Epoch 1: Binary Loss = 0.1289, Instance Loss = 2.2986, Total Loss = 2.4276
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_1.pth
+Epoch 2/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 2/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.73it/s]
+Validation Results - Epoch 2: Binary Loss = 0.0886, Instance Loss = 1.1728, Total Loss = 1.2614
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_2.pth
+Epoch 3/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 3/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.74it/s]
+Validation Results - Epoch 3: Binary Loss = 0.0877, Instance Loss = 1.1239, Total Loss = 1.2115
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_3.pth
+Epoch 4/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 4/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.73it/s]
+Validation Results - Epoch 4: Binary Loss = 0.0778, Instance Loss = 0.8680, Total Loss = 0.9458
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_4.pth
+Epoch 5/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 5/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:03<00:00,  2.75it/s]
+Validation Results - Epoch 5: Binary Loss = 0.0746, Instance Loss = 0.8194, Total Loss = 0.8940
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_5.pth
+Epoch 6/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 6/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.74it/s]
+Validation Results - Epoch 6: Binary Loss = 0.0734, Instance Loss = 0.7550, Total Loss = 0.8284
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_6.pth
+Epoch 7/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 7/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.72it/s]
+Validation Results - Epoch 7: Binary Loss = 0.0721, Instance Loss = 0.7715, Total Loss = 0.8436
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_7.pth
+Epoch 8/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 8/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.72it/s]
+Validation Results - Epoch 8: Binary Loss = 0.0714, Instance Loss = 0.7645, Total Loss = 0.8358
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_8.pth
+Epoch 9/10: 100%|██████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 9/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.72it/s]
+Validation Results - Epoch 9: Binary Loss = 0.0700, Instance Loss = 0.7769, Total Loss = 0.8468
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_9.pth
+Epoch 10/10: 100%|█████████████████████████████████████████████████████████████████████████| 81/81 [01:01<00:00,  1.32it/s]
+Epoch 10/10: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|██████████████████████████████████████████████████████████████████████████| 11/11 [00:04<00:00,  2.70it/s]
+Validation Results - Epoch 10: Binary Loss = 0.0685, Instance Loss = 0.7580, Total Loss = 0.8265
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_10.pth
