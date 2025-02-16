@@ -1,0 +1,29 @@
+Epoch 1/5: 100%|██████████████████████████████| 101/101 [00:59<00:00,  1.69it/s]
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/fromnumeric.py:3464: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/rk33/.conda/envs/tusimple/lib/python3.8/site-packages/numpy/core/_methods.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Epoch 1/5: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|███████████████████████████████| 13/13 [00:03<00:00,  3.26it/s]
+Validation Results - Epoch 1: Binary Loss = 0.1126, Instance Loss = 1.2695, Total Loss = 1.3821
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_1.pth
+Epoch 2/5: 100%|██████████████████████████████| 101/101 [00:59<00:00,  1.70it/s]
+Epoch 2/5: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|███████████████████████████████| 13/13 [00:03<00:00,  3.26it/s]
+Validation Results - Epoch 2: Binary Loss = 0.0941, Instance Loss = 0.9078, Total Loss = 1.0018
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_2.pth
+Epoch 3/5: 100%|██████████████████████████████| 101/101 [00:59<00:00,  1.70it/s]
+Epoch 3/5: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|███████████████████████████████| 13/13 [00:03<00:00,  3.27it/s]
+Validation Results - Epoch 3: Binary Loss = 0.0823, Instance Loss = 0.8440, Total Loss = 0.9262
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_3.pth
+Epoch 4/5: 100%|██████████████████████████████| 101/101 [00:59<00:00,  1.70it/s]
+Epoch 4/5: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|███████████████████████████████| 13/13 [00:03<00:00,  3.27it/s]
+Validation Results - Epoch 4: Binary Loss = 0.0760, Instance Loss = 0.7852, Total Loss = 0.8612
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_4.pth
+Epoch 5/5: 100%|██████████████████████████████| 101/101 [00:59<00:00,  1.69it/s]
+Epoch 5/5: Binary Loss = nan, Instance Loss = nan, Total Loss = 0.0000
+Validating: 100%|███████████████████████████████| 13/13 [00:03<00:00,  3.28it/s]
+Validation Results - Epoch 5: Binary Loss = 0.0757, Instance Loss = 0.8000, Total Loss = 0.8758
+Checkpoint saved at checkpoints/enet_checkpoint_epoch_5.pth

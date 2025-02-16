@@ -8,7 +8,7 @@ import os
 
 # Define dataset and checkpoint paths
 DATASET_PATH = "/opt/data/TUSimple/test_set"
-CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_4.pth"  # Path to the trained model checkpoint
+CHECKPOINT_PATH = "checkpoints/enet_checkpoint_epoch_9.pth"  # Path to the trained model checkpoint
 
 # Function to load the ENet model
 def load_enet_model(checkpoint_path, device="cuda"):
@@ -71,8 +71,8 @@ def visualize_lanes_row(images, instances_maps, alpha=0.7):
     	#instance = cv2.resize(instances_maps[i], (256, 512))
 
     	#overlaid = cv2.addWeighted(birds_eye.astype(np.float32), alpha, instance.astype(np.float32), 1-alpha, 0)
-    	axes[i].imshow(instance.astype(np.int32), alpha=0.8)
-    	axes[i].imshow(birds_eye.astype(np.int32), alpha=0.2)
+    	axes[i].imshow(instance.astype(np.int32), alpha=0.9)
+    	axes[i].imshow(birds_eye.astype(np.int32), alpha=0.1)
     
     ####################### TODO: Your code ends Here #######################
 

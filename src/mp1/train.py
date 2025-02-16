@@ -11,9 +11,9 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 32
+BATCH_SIZE = 40
 LR = 0.001
-EPOCHS = 5
+EPOCHS = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DATASET_PATH =  "/opt/data/TUSimple"
 CHECKPOINT_DIR = "checkpoints"
@@ -75,13 +75,13 @@ def train():
     ################################################################################
     # train_dataset = ...
     # train_loader = DataLoader(...)
-    train_dataset = LaneDataset(DATASET_PATH)
+    train_dataset = LaneDataset(DATASET_PATH, "train")
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True);
 
     # val_dataset = ...
     # val_loader = DataLoader(...)
     val_dataset = LaneDataset(DATASET_PATH, "val")
-    val_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True);
+    val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=True);
     ################################################################################
 
     # Model and optimizer initialization
