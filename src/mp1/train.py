@@ -11,7 +11,7 @@ from utils.visualization import visualize_first_prediction
 from torch.optim import Adam
 
 # Configurations
-BATCH_SIZE = 40
+BATCH_SIZE = 44
 LR = 0.001
 EPOCHS = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -138,7 +138,7 @@ def train():
                 binary_label=binary_labels,
                 instance_label=instance_labels,
             )
-            loss = 0.5*binary_loss + 0.5*instance_loss #modify contribution
+            loss = 1.6*binary_loss + 0.4*instance_loss #modify contribution
             
             optimizer.zero_grad()
             loss.backward()
